@@ -1,91 +1,81 @@
-# 📊 Customer Churn Prediction System
+Customer Churn Prediction System
 
-## 🚀 Overview
+	Overview
 
 This project predicts whether a customer is likely to churn using machine learning.
 It helps businesses identify high-risk customers and take proactive retention actions.
 
----
+	Key Features
+•	End-to-end ML pipeline (data → model → deployment)
+•	Data preprocessing & feature engineering
+•	Exploratory Data Analysis (EDA) with insights
+•	Multiple models: Logistic Regression, Random Forest, XGBoost
+•	Class imbalance handling (improved churn recall)
+•	Streamlit web app for real-time prediction
+•	Probability-based output (confidence score)
 
-## 🧠 Key Features
+	Dataset
 
-* End-to-end ML pipeline (data → model → deployment)
-* Data preprocessing & feature engineering
-* Exploratory Data Analysis (EDA) with insights
-* Multiple models: Logistic Regression, Random Forest, XGBoost
-* Class imbalance handling (improved churn recall)
-* Streamlit web app for real-time prediction
-* Probability-based output (confidence score)
+•	Telco Customer Churn Dataset (~7000 records)
+•	Features include:
+o	Customer demographics
+o	Services subscribed
+o	Billing & payment details
+o	Tenure (customer duration)
 
----
 
-## 📊 Dataset
+	Model Performance
 
-* Telco Customer Churn Dataset (~7000 records)
-* Features include:
+Model	Accuracy	Recall (Churn)
+Logistic Regression	0.78	0.52
+Balanced Logistic Regression	0.73	0.79
+Random Forest	0.78	0.46
+XGBoost	0.74	0.65
 
-  * Customer demographics
-  * Services subscribed
-  * Billing & payment details
-  * Tenure (customer duration)
+Final Model: Balanced Logistic Regression (best for churn detection
 
----
+	Key Insights
 
-## 📈 Model Performance
+•	Customers with low tenure are more likely to churn
+•	High monthly charges increase churn probability
+•	Month-to-month contracts have highest churn risk
+•	Long-term contracts reduce churn significantly
 
-| Model                        | Accuracy | Recall (Churn) |
-| ---------------------------- | -------- | -------------- |
-| Logistic Regression          | 0.78     | 0.52           |
-| Balanced Logistic Regression | 0.73     | **0.79 🔥**    |
-| Random Forest                | 0.78     | 0.46           |
-| XGBoost                      | 0.74     | 0.65           |
 
-👉 Final Model: **Balanced Logistic Regression (best for churn detection)**
+	Tech Stack
 
----
+•	Python
+•	Pandas, NumPy
+•	Scikit-learn
+•	XGBoost
+•	Matplotlib, Seaborn
+•	Streamlit
 
-## 🧠 Key Insights
 
-* Customers with low tenure are more likely to churn
-* High monthly charges increase churn probability
-* Month-to-month contracts have highest churn risk
-* Long-term contracts reduce churn significantly
+	Demo (Streamlit App)
 
----
+•	Run Locally
 
-## 🛠️ Tech Stack
-
-* Python
-* Pandas, NumPy
-* Scikit-learn
-* XGBoost
-* Matplotlib, Seaborn
-* Streamlit
-
----
-
-## 🖥️ Demo (Streamlit App)
-
-### ▶️ Run Locally
-
-```bash
-git clone https://github.com/your-username/churn-prediction.git
+bash
+git clone https://github.com/onkar1845 /churn-prediction.git
 cd churn-prediction
 pip install -r requirements.txt
 streamlit run app/app.py
-```
 
----
 
-## 📸 App Screenshot
 
-(Add your Streamlit UI screenshot here)
 
----
+	 App Screenshot
 
-## 📂 Project Structure
+ 
 
-```
+
+
+
+
+
+	Project Structure
+
 churn-prediction/
 │
 ├── src/
@@ -97,20 +87,19 @@ churn-prediction/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
 
----
 
-## 📌 Future Improvements
+	Future Improvements
 
-* Add more feature inputs in UI
-* Deploy on cloud (Render / AWS)
-* Hyperparameter tuning
-* Model explainability (SHAP)
+•	Add more feature inputs in UI
+•	Deploy on cloud (Render / AWS)
+•	Hyperparameter tuning
+•	Model explainability (SHAP)
 
----
 
-## 👨‍💻 Author
+	Author: Onkar Y. Koli 
 
-Final Year Computer Science Student
-Machine Learning Enthusiast 🚀
+•	Final Year Computer Science Student
+•	Machine Learning Enthusiast 
+
+
